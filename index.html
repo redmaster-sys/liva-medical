@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="sage">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liva Medical | Sağlıklı Yaşam, Güvenli Bakım, Mutlu Yarınlar</title>
+  <meta name="description" content="Liva Medikal — ConvaTec Çukurova Bölge Distribütörü, ANKA Laparoskopik Cerrahi Aplikatörler, İleri Yara Bakımı ve Onkoloji Port İğnesi Çözümleri." />
+  <meta name="theme-color" content="#234234" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Liva Medical | Klinik Bakım & Cerrahi Teknoloji Merkezi" />
+  <meta property="og:description" content="ConvaTec Ostomi & Hydrofiber İleri Yara Bakımı, ANKA Laparoskopik Cerrahi Aplikatörler ve Güvenlikli Port İğnesi Çözümleri." />
+  <meta property="og:image" content="assets/images/transparent/liva-signature-logo-2k.png" />
+  <link rel="icon" type="image/png" href="assets/images/transparent/liva-signature-logo-2k.png" />
+  <link rel="apple-touch-icon" href="assets/images/transparent/liva-signature-logo-2k.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. CLEAN AIRY NAVBAR (CLEARGRIN & ANAVERSE STYLE)
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <!-- 2K Sculptural 3D Signature Liva Medical Emblem (Auto-adapts to Sage & Cobalt themes) -->
+      <a href="#top" class="brand-logo" aria-label="Liva Medical Ana Sayfa">
+        <div class="brand-mark-2k">
+          <img class="logo-img-sage" src="assets/images/transparent/liva-signature-logo-2k.png" alt="Liva Medical 2K Amblem Logo" />
+          <img class="logo-img-cobalt" src="assets/images/transparent/liva-signature-logo-cobalt-2k.png" alt="Liva Medical 2K Cobalt Amblem Logo" />
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">Liva <span class="brand-name-light">Medical</span></span>
+          <span class="brand-sub">CLINICAL CARE &amp; TECH</span>
+        </div>
+      </a>
+
+      <!-- Clean Horizontal Navigation -->
+      <nav class="main-nav" id="mainNav">
+        <a href="#top" class="nav-link active">Ana Sayfa</a>
+        <a href="#hizmetlerimiz" class="nav-link">Hizmetlerimiz</a>
+        <a href="#yaklasimimiz" class="nav-link">Hakkımızda</a>
+        <a href="#katalog" class="nav-link">Ürün Kataloğu</a>
+        <a href="#partnerler" class="nav-link">Partnerler</a>
+        <a href="#iletisim" class="nav-link">İletişim</a>
+      </nav>
+
+      <!-- Right Actions: Dual Theme Switcher (Görsel 1 Sage / Görsel 2 Cobalt), Search & Pill CTA -->
+      <div class="header-actions">
+        <div class="theme-pill-switch" role="group" aria-label="Görsel Tema Seçimi">
+          <button type="button" class="theme-pill-option active" id="btnThemeSage" onclick="setVisualTheme('sage')" title="Görsel 1: Cleargrin Botanik Yeşil Tema">
+            🌿 Sage
+          </button>
+          <button type="button" class="theme-pill-option" id="btnThemeCobalt" onclick="setVisualTheme('cobalt')" title="Görsel 2: Anaverse Medikal Mavi Tema">
+            💙 Cobalt
+          </button>
+        </div>
+
+        <button type="button" class="search-icon-btn" onclick="openGodlySpotlight()" title="Hızlı Ürün Arama (⌘K / Ctrl+K)" aria-label="Ürün Ara">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a href="#iletisim" class="btn-pill btn-pill-primary">
+          <span>Randevu &amp; Teklif</span>
+          <span class="arrow-icon">→</span>
+        </a>
+
+        <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Menüyü Aç">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       2. HERO SECTION + FLOATING GLASS APPOINTMENT CARD + 4-STAT RIBBON
+       (Exact match to Screenshot 1 Cleargrin & Screenshot 2 Anaverse)
+       ======================================================================== -->
+  <section class="hero-wrapper" id="top">
+    <div class="container">
+      <div class="hero-canvas">
+        <img src="assets/images/hd/hero-modern-care.jpg" alt="Liva Medical Klinik Bakım" class="hero-bg-photo" />
+        <div class="hero-bg-overlay"></div>
+
+        <div class="hero-grid">
+          <!-- Left Editorial Column -->
+          <div class="hero-left">
+            <div class="hero-kicker-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+              <span>SAĞLIKLI YARINLAR İÇİN BUGÜNDEN ÖZENLİ BAKIM</span>
+            </div>
+
+            <div class="hero-headline-wrap">
+              <h1 class="hero-headline">
+                Sağlıklı Yaşam<br />
+                Güvenli Bakım
+                <!-- Organic Smile Curve SVG & Handwritten Callout (Exact Cleargrin Detail) -->
+                <svg class="hero-smile-curve" width="66" height="24" viewBox="0 0 66 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 6C18 21 46 21 61 5" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+                <span class="hero-handwritten-note">Daha İyi Bir Sen ♡</span>
+                <span class="sage-line">Mutlu Yarınlar</span>
+              </h1>
+            </div>
+
+            <p class="hero-subtitle">
+              Sizin, ailenizin ve kliniğinizin ihtiyaçları için nazik, modern ve dünya standartlarında medikal bakım teknolojileri.
+            </p>
+
+            <!-- Pill Buttons Row -->
+            <div class="hero-cta-row">
+              <a href="#katalog" class="btn-pill btn-pill-primary">
+                <span>Ürünleri Keşfet</span>
+                <span class="arrow-icon">→</span>
+              </a>
+
+              <button type="button" class="btn-pill btn-pill-secondary" onclick="openProductModal('anka-laparoskopik-klip')">
+                <span class="btn-circle-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="6 4 20 12 6 20 6 4"></polygon>
+                  </svg>
+                </span>
+                <span>3B Stüdyoyu Aç</span>
+              </button>
+            </div>
+
+            <!-- 3 Minimal Line-Art Trust Badges (Exact Cleargrin Bottom-Left Icons) -->
+            <div class="hero-trust-strip">
+              <div class="hero-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <span>Güvenilir<br />Klinik Bakım</span>
+              </div>
+
+              <div class="hero-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>Her Yaşa &amp;<br />Kliniğe Uygun</span>
+              </div>
+
+              <div class="hero-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"></path>
+                  <line x1="12" y1="11" x2="12" y2="17"></line>
+                  <line x1="9" y1="14" x2="15" y2="14"></line>
+                </svg>
+                <span>Modern<br />Teknoloji</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Floating Frosted Glass Appointment / Quick Request Card (Exact Cleargrin Card) -->
+          <div class="hero-Appointment-card">
+            <div class="appt-card-header">
+              <div class="appt-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="3" ry="3"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                  <path d="m9 16 2 2 4-4"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Hızlı Randevu &amp; Talep</h3>
+                <p>Daha sağlıklı ve konforlu bir bakım için ilk adımı hemen atın.</p>
+              </div>
+            </div>
+
+            <form class="appt-form" id="heroQuickForm">
+              <input type="text" class="appt-input" id="heroName" placeholder="Adınız Soyadınız / Kurum Adı" required />
+              <input type="tel" class="appt-input" id="heroPhone" placeholder="Telefon Numaranız" required />
+              <input type="text" class="appt-input" id="heroDate" placeholder="📅 Uygun Görüşme Tarihi (Örn. Bugün)" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" />
+              <select class="appt-input" id="heroService" aria-label="Hizmet Seçin">
+                <option value="Ostomi Bakım Sistemleri (ConvaTec)">Hizmet Seçin: Ostomi Sistemleri</option>
+                <option value="İleri Yara Bakım Örtüleri (AQUACEL / Gelfix)">İleri Yara Bakım Örtüleri</option>
+                <option value="Laparoskopik Cerrahi Aplikatör (ANKA)">Laparoskopik Cerrahi Aletler</option>
+                <option value="Güvenlikli Port İğnesi (Huber)">Onkoloji Güvenlikli Port İğnesi</option>
+              </select>
+
+              <button type="submit" class="btn-pill btn-pill-primary appt-submit-btn">
+                <span>Hemen Oluştur</span>
+                <span class="arrow-icon">→</span>
+              </button>
+            </form>
+
+            <div class="appt-secure-note" id="heroQuickStatus">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span>Bilgileriniz %100 güvendedir.</span>
+            </div>
+
+            <!-- WhatsApp Direct Redirect in Bottom Space of Appointment Card -->
+            <div class="appt-whatsapp-wrap">
+              <div class="appt-whatsapp-divider">
+                <span>veya doğrudan WhatsApp hattımız</span>
+              </div>
+              <a href="https://wa.me/905417656520?text=Merhaba%20Liva%20Medikal,%20%C3%BCr%C3%BCnleriniz%20ve%20medikal%20%C3%A7%C3%B6z%C3%BCmleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="appt-whatsapp-btn"
+                 onclick="return openLivaWhatsApp('hero', event)"
+                 aria-label="Whatsapp İletişim">
+                <span class="wa-icon-circle">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z"/>
+                  </svg>
+                </span>
+                <span class="wa-btn-copy">
+                  <span class="wa-btn-title">Whatsapp İletişim</span>
+                </span>
+                <span class="wa-btn-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overlapping 4-Stat Pill Bar (Exact match to Screenshot 2 & Screenshot 1 stats) -->
+      <div class="floating-stats-bar">
+        <div class="stat-pill-item">
+          <div class="stat-circle-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+              <line x1="9" y1="9" x2="9.01" y2="9"></line>
+              <line x1="15" y1="9" x2="15.01" y2="9"></line>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-number">5.000+</div>
+            <div class="stat-label">Mutlu Hasta &amp; Klinik</div>
+          </div>
+        </div>
+
+        <div class="stat-pill-item">
+          <div class="stat-circle-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-number">4.9/5</div>
+            <div class="stat-label">Klinik Memnuniyet Puanı</div>
+          </div>
+        </div>
+
+        <div class="stat-pill-item">
+          <div class="stat-circle-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-number">15+ Yıl</div>
+            <div class="stat-label">Güvenilir Medikal Deneyim</div>
+          </div>
+        </div>
+
+        <div class="stat-pill-item">
+          <div class="stat-circle-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-number">%100</div>
+            <div class="stat-label">Orijinal CE &amp; ÜTS Güvencesi</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. "OUR SERVICES / HİZMETLERİMİZ" 6-CARD PASTEL STRIP
+       (Exact match to Screenshot 1's 6 vertical circular-icon cards)
+       ======================================================================== -->
+  <section class="section-spacer" id="hizmetlerimiz">
+    <div class="container">
+      <div class="section-top-bar">
+        <div>
+          <h2 class="section-heading">Hizmetlerimiz &amp; Çözüm Gruplarımız</h2>
+          <p class="section-subheading">Her hasta, hekim ve sağlık kurumu için özenle seçilmiş kapsamlı medikal bakım.</p>
+        </div>
+        <a href="#katalog" class="btn-pill btn-pill-outline" onclick="filterByCategory('all', true)">
+          <span>Tüm Hizmetleri Gör</span>
+          <span>→</span>
+        </a>
+      </div>
+
+      <div class="services-6-grid">
+        <!-- Card 1 -->
+        <div class="service-pastel-card" onclick="filterByCategory('ostomi', true)">
+          <div class="service-circle-badge">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="M9 12l2 2 4-4"></path>
+            </svg>
+          </div>
+          <h3>Ostomi<br />Sistemleri</h3>
+          <p>ConvaTec Natura® &amp; Esteem®+ ile güvenli, sızıntısız konfor</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-pastel-card" onclick="filterByCategory('yara', true)">
+          <div class="service-circle-badge">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <line x1="12" y1="8" x2="12" y2="16"></line>
+              <line x1="8" y1="12" x2="16" y2="12"></line>
+            </svg>
+          </div>
+          <h3>İleri Yara<br />Bakım Örtüleri</h3>
+          <p>AQUACEL™ Ag+ Extra ve Hydrofiber® ile hızlı iyileşme</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-pastel-card" onclick="filterByCategory('cerrahi', true)">
+          <div class="service-circle-badge">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="6" cy="6" r="3"></circle>
+              <circle cx="6" cy="18" r="3"></circle>
+              <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+              <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+            </svg>
+          </div>
+          <h3>Laparoskopik<br />Cerrahi Aletler</h3>
+          <p>ANKA reusable 330mm &amp; 440mm paslanmaz klip aplikatörler</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-pastel-card" onclick="openProductModal('esenta-cilt-bariyeri')">
+          <div class="service-circle-badge">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+            </svg>
+          </div>
+          <h3>Cilt Koruma &amp;<br />ESENTA™ Bakım</h3>
+          <p>72 saat etkili yakmayan silikon cilt bariyeri ve aksesuarlar</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-pastel-card" onclick="openProductModal('pediyatrik-torba')">
+          <div class="service-circle-badge">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </div>
+          <h3>Pediyatrik<br />Özel Bakım</h3>
+          <p>Çocukların hassas cildi için nazik Little Ones® çözümleri</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-pastel-card" onclick="filterByCategory('port', true)">
+          <div class="service-circle-badge">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <h3>Onkoloji &amp;<br />Port İğnesi</h3>
+          <p>Güvenlik zırhlı, klempli ve Y-setli non-coring Huber iğnesi</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. "MODERN CARE. A KINDER APPROACH." SPLIT BANNER + TESTIMONIAL CARD
+       (Exact match to Screenshot 1's architectural reception & quote section)
+       ======================================================================== -->
+  <section class="section-spacer" id="yaklasimimiz" style="padding-top:16px;">
+    <div class="container">
+      <div class="experience-split-grid">
+        <!-- Left 70% Architectural Banner -->
+        <div class="modern-care-banner">
+          <div class="modern-care-copy">
+            <span class="modern-care-kicker">DAHA HUZURLU BİR MEDİKAL DENEYİM</span>
+            <h2>Modern Bakım.<br />İnsana Değer Veren Yaklaşım.</h2>
+            <p>
+              İleri medikal teknolojiyi sıcak, samimi ve güven veren bir hizmet anlayışıyla birleştiriyor; her hastamızın ve hekimimizin sürecini konforlu ve stressiz hale getiriyoruz.
+            </p>
+            <div>
+              <a href="#partnerler" class="btn-pill btn-pill-primary">
+                <span>Daha Fazla Bilgi</span>
+                <span class="arrow-icon">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="modern-care-photo-wrap">
+            <img src="assets/images/hd/clinic-interior-liva.jpg" alt="Liva Medical Modern Merkez" />
+          </div>
+        </div>
+
+        <!-- Right 30% Quote / Testimonial Card -->
+        <div class="quote-pastel-card">
+          <div>
+            <div class="quote-mark-svg">“</div>
+            <p class="quote-text" id="testimonialText">
+              "Liva Medikal ekibi tüm tedarik ve ürün danışmanlığı sürecimizi inanılmaz kolay ve konforlu hale getirdi. Orijinal ConvaTec ve ANKA ürün kalitesini kesinlikle tavsiye ederim!"
+            </p>
+            <div class="quote-author" id="testimonialAuthor">— Doç. Dr. Selim K. (Genel Cerrahi)</div>
+          </div>
+
+          <div class="quote-nav-row">
+            <button type="button" class="quote-arrow-btn" onclick="cycleTestimonial(-1)" aria-label="Önceki Yorum">←</button>
+            <div class="quote-dots" id="testimonialDots">
+              <span class="quote-dot active"></span>
+              <span class="quote-dot"></span>
+              <span class="quote-dot"></span>
+            </div>
+            <button type="button" class="quote-arrow-btn" onclick="cycleTestimonial(1)" aria-label="Sonraki Yorum">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. INTERACTIVE HD PRODUCT CATALOG (3D ROTATION & OPTICAL MAGNIFIER)
+       ======================================================================== -->
+  <section class="section-spacer" id="katalog">
+    <div class="container">
+      <div class="section-top-bar">
+        <div>
+          <h2 class="section-heading">Klinik Ürünlerimiz &amp; 3B Büyüteç Stüdyosu</h2>
+          <p class="section-subheading">
+            Ürün görsellerini imlecinizle <strong>🔄 3B döndürebilir</strong>, kart üzerindeki <strong>🔍 Büyüteç</strong> ile yakınlaştırabilir veya 3B inceleme stüdyosunu açabilirsiniz.
+          </p>
+        </div>
+      </div>
+
+      <!-- Filter & Search Toolbar -->
+      <div class="catalog-toolbar">
+        <div class="category-tabs" role="tablist">
+          <button type="button" class="cat-tab active" data-cat="all">
+            Tümü <span class="count-badge">21</span>
+          </button>
+          <button type="button" class="cat-tab" data-cat="ostomi">
+            Ostomi Ürünleri <span class="count-badge">12</span>
+          </button>
+          <button type="button" class="cat-tab" data-cat="yara">
+            Yara Örtüleri <span class="count-badge">6</span>
+          </button>
+          <button type="button" class="cat-tab" data-cat="cerrahi">
+            Cerrahi Aletler <span class="count-badge">2</span>
+          </button>
+          <button type="button" class="cat-tab" data-cat="port">
+            Port İğnesi <span class="count-badge">1</span>
+          </button>
+        </div>
+
+        <div class="catalog-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="search" id="catalogSearchInput" placeholder="Ürün veya teknoloji ara (Aquacel, Natura, Gelfix)..." />
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; font-size:0.86rem; color:var(--text-muted);">
+        <span id="catalogResultCount" style="font-weight:700; color:var(--text-heading);">21 Klinik Ürün Listeleniyor</span>
+        <span>🔍 Büyüteç ve 🔄 3B döndürme tüm ürünlerde aktiftir</span>
+      </div>
+
+      <!-- Dynamic Product Grid -->
+      <div class="product-grid" id="productGrid"></div>
+
+      <!-- ANKA Reusable Surgical Applicator Dimension Matrix -->
+      <div class="matrix-card" id="anka-boyut-tablosu">
+        <div class="matrix-header">
+          <div>
+            <span class="modern-care-kicker" style="display:block;">ANKA SAĞLIK TEKNİK ÖLÇÜ REHBERİ</span>
+            <h3 class="section-heading" style="font-size:1.45rem;">Reusable Laparoskopik &amp; Açık Cerrahi Klip Aplikatör Ölçüleri</h3>
+            <p class="section-subheading" style="font-size:0.88rem;">Ameliyathane standartlarına uygun 316L Alman paslanmaz çelik aplikatör konfigürasyonları:</p>
+          </div>
+          <a href="http://www.ankasaglik.com.tr" target="_blank" rel="noopener" class="btn-pill btn-pill-outline">
+            <span>ANKA Sağlık Resmi Sitesi</span>
+            <span>↗</span>
+          </a>
+        </div>
+
+        <div class="table-responsive">
+          <table class="surgical-table">
+            <thead>
+              <tr>
+                <th>Ürün Grubu</th>
+                <th>Model / Seri</th>
+                <th>Uzunluk</th>
+                <th>Çap (Ø)</th>
+                <th>Renk Kodu / Uyum</th>
+                <th>Sterilizasyon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Laparoskopik Klip Aplikatör</strong></td>
+                <td>Standart Endoskopik Şaft</td>
+                <td><span class="mono-code">330 mm</span></td>
+                <td><span class="mono-code">Ø 5 mm</span></td>
+                <td>Titanyum &amp; Polimer Klipler</td>
+                <td>134°C Buharlı Otoklav</td>
+              </tr>
+              <tr>
+                <td><strong>Laparoskopik Klip Aplikatör</strong></td>
+                <td>Standart Endoskopik Şaft</td>
+                <td><span class="mono-code">330 mm</span></td>
+                <td><span class="mono-code">Ø 10 mm</span></td>
+                <td>Medium-Large / Large Klip</td>
+                <td>134°C Buharlı Otoklav</td>
+              </tr>
+              <tr>
+                <td><strong>Laparoskopik Klip Aplikatör</strong></td>
+                <td>Bariatrik / Uzun Şaft</td>
+                <td><span class="mono-code">440 mm</span></td>
+                <td><span class="mono-code">Ø 5 mm / Ø 10 mm</span></td>
+                <td>360° Dönebilen Sökülebilir</td>
+                <td>134°C Buharlı Otoklav</td>
+              </tr>
+              <tr>
+                <td><strong>Açık Cerrahi Klip Aplikatör</strong></td>
+                <td>Küçük (Small / Medium)</td>
+                <td><span class="mono-code">200 mm</span></td>
+                <td><span class="mono-code">3 – 10 mm</span></td>
+                <td>Yeşil / Mavi Kodlu Çene</td>
+                <td>134°C Buharlı Otoklav</td>
+              </tr>
+              <tr>
+                <td><strong>Açık Cerrahi Klip Aplikatör</strong></td>
+                <td>Orta (Medium / Large)</td>
+                <td><span class="mono-code">200 mm</span></td>
+                <td><span class="mono-code">5 – 13 mm</span></td>
+                <td>Sarı / Mor Kodlu Çene</td>
+                <td>134°C Buharlı Otoklav</td>
+              </tr>
+              <tr>
+                <td><strong>Açık Cerrahi Klip Aplikatör</strong></td>
+                <td>Büyük (Large / Extra Large)</td>
+                <td><span class="mono-code">200 mm</span></td>
+                <td><span class="mono-code">7 – 16 mm</span></td>
+                <td>Turuncu / Kahve Kodlu Çene</td>
+                <td>134°C Buharlı Otoklav</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. OFFICIAL PARTNER ECOSYSTEM
+       ======================================================================== -->
+  <section class="section-spacer" id="partnerler" style="padding-top:10px;">
+    <div class="container">
+      <div class="section-top-bar">
+        <div>
+          <h2 class="section-heading">Resmi Çözüm &amp; Teknoloji Ortaklarımız</h2>
+          <p class="section-subheading">Çukurova bölge distribütörlüğünü ve resmi tedarikçiliğini yürüttüğümüz global markalar.</p>
+        </div>
+      </div>
+
+      <div class="partners-4-grid">
+        <a href="https://www.convatec.com/tr-tr/" target="_blank" rel="noopener" class="partner-pastel-card">
+          <div class="partner-logo-box">
+            <img src="assets/images/transparent/convatec-official-logo.png" alt="ConvaTec Logo" />
+          </div>
+          <div>
+            <h3 style="font-family:var(--font-display); font-size:1.08rem; font-weight:700; color:var(--text-heading);">ConvaTec® Türkiye ↗</h3>
+            <p style="font-size:0.82rem; color:var(--accent-500); font-weight:700; margin-top:2px;">Çukurova Bölge Distribütörü</p>
+            <p style="font-size:0.8rem; color:var(--text-body); margin-top:6px;">Ostomi (Natura®, Esteem®+, ESENTA™) ve Hydrofiber® AQUACEL™ Ag+ yara bakım lideri.</p>
+          </div>
+        </a>
+
+        <a href="http://www.ankasaglik.com.tr" target="_blank" rel="noopener" class="partner-pastel-card">
+          <div class="partner-logo-box">
+            <img src="assets/images/transparent/anka-logo.png" alt="ANKA Sağlık Logo" />
+          </div>
+          <div>
+            <h3 style="font-family:var(--font-display); font-size:1.08rem; font-weight:700; color:var(--text-heading);">ANKA Sağlık (Ankalaps) ↗</h3>
+            <p style="font-size:0.82rem; color:var(--accent-500); font-weight:700; margin-top:2px;">Laparoskopik &amp; Açık Cerrahi</p>
+            <p style="font-size:0.8rem; color:var(--text-body); margin-top:6px;">ISO 13485 ve CE sertifikalı reusable endoskopik ve açık cerrahi klip aplikatörleri.</p>
+          </div>
+        </a>
+
+        <a href="#katalog" onclick="openProductModal('gelfix-kollajen-ped')" class="partner-pastel-card">
+          <div class="partner-logo-box">
+            <img src="assets/images/transparent/gelfix-1-hd.png" alt="GELFIX" />
+          </div>
+          <div>
+            <h3 style="font-family:var(--font-display); font-size:1.08rem; font-weight:700; color:var(--text-heading);">Euroresearch / GELFIX®</h3>
+            <p style="font-size:0.82rem; color:var(--accent-500); font-weight:700; margin-top:2px;">Milano, İtalya • Bio-Gen İlaç</p>
+            <p style="font-size:0.8rem; color:var(--text-body); margin-top:6px;">Steril liyofilize Tip I atelokollajen hemostatik ve doku rejenerasyon pedi (CE 0373).</p>
+          </div>
+        </a>
+
+        <a href="#katalog" onclick="openProductModal('guvenlikli-port-ignesi')" class="partner-pastel-card">
+          <div class="partner-logo-box">
+            <img src="assets/images/transparent/port-ignesi-hd.png" alt="Port İğnesi" />
+          </div>
+          <div>
+            <h3 style="font-family:var(--font-display); font-size:1.08rem; font-weight:700; color:var(--text-heading);">Onkoloji Vasküler Erişim</h3>
+            <p style="font-size:0.82rem; color:var(--accent-500); font-weight:700; margin-top:2px;">Güvenlik Zırhlı Huber Seti</p>
+            <p style="font-size:0.8rem; color:var(--text-body); margin-top:6px;">Kemoterapi ve uzun süreli infüzyonlarda iğne batma yaralanmalarını önleyen Y-konnektörlü sistem.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. CONTACT & SEYHAN/ADANA HQ + ANAVERSE CALLOUT BANNER
+       ======================================================================== -->
+  <section class="section-spacer" id="iletisim">
+    <div class="container">
+      <!-- Screenshot 2 Anaverse Style Callout Banner -->
+      <div class="callout-banner" style="margin-bottom:32px;">
+        <div class="callout-copy">
+          <h3>Medikal Tedarik veya Ürün Desteği mi Gerekiyor?</h3>
+          <p>Uzman klinik destek ekibimiz hastane, eczane ve bireysel hasta talepleriniz için yanınızda.</p>
+          <div class="callout-pills">
+            <span class="callout-mini-pill">✓ Resmi ConvaTec Bölge Distribütörü</span>
+            <span class="callout-mini-pill">✓ CE &amp; ÜTS Kayıtlı Ürünler</span>
+            <span class="callout-mini-pill">✓ Hızlı Bölgesel Teslimat</span>
+          </div>
+        </div>
+
+        <a href="tel:+903222279191" class="callout-phone-card">
+          <div class="callout-phone-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <div>
+            <span style="font-size:0.76rem; color:var(--text-muted); font-weight:600;">Bize Hemen Ulaşın</span>
+            <span class="callout-phone-number">(0322) 227 91 91</span>
+            <span style="font-size:0.75rem; color:var(--accent-500); font-weight:600;">info@livamedical.com →</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="contact-grid">
+        <div class="quote-form-card">
+          <h3 class="section-heading" style="font-size:1.5rem; margin-bottom:6px;">Kurumsal Teklif &amp; Bilgi Formu</h3>
+          <p class="section-subheading" style="font-size:0.88rem; margin-bottom:20px;">
+            İlgilendiğiniz ürünleri seçin, ekibimiz teknik şartname ve fiyat teklifiyle dönüş yapsın.
+          </p>
+
+          <form id="livaQuoteForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="quoteOrg">Kurum / Hastane / Eczane Adı</label>
+                <input type="text" id="quoteOrg" class="form-control" placeholder="Örn. Çukurova Üniversitesi / Eczane" required />
+              </div>
+              <div class="form-group">
+                <label for="quoteName">Adınız Soyadınız</label>
+                <input type="text" id="quoteName" class="form-control" placeholder="Adınız Soyadınız" required />
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="quotePhone">Telefon Numaranız</label>
+                <input type="tel" id="quotePhone" class="form-control" placeholder="0 (5XX) XXX XX XX" required />
+              </div>
+              <div class="form-group">
+                <label for="quoteEmail">E-Posta Adresiniz</label>
+                <input type="email" id="quoteEmail" class="form-control" placeholder="ornek@kurum.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="quoteCategory">İlgilendiğiniz Ürün Grubu</label>
+              <select id="quoteCategory" class="form-control">
+                <option value="ostomi">ConvaTec Ostomi (Stoma) Bakım Sistemleri</option>
+                <option value="yara">AQUACEL™ Ag+ / GranuFLEX® / GELFIX® Yara Örtüleri</option>
+                <option value="cerrahi">ANKA Reusable Laparoskopik &amp; Açık Cerrahi Aplikatörler</option>
+                <option value="port">Güvenlikli Port İğnesi (Huber Kemoterapi Seti)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="quoteMessage">Mesajınız veya Ürün Detayı</label>
+              <textarea id="quoteMessage" class="form-control" rows="3" placeholder="Talep ettiğiniz ürün ölçülerini veya miktarını belirtebilirsiniz..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-pill btn-pill-primary" style="width:100%;">
+              <span>Teklif Talebini Gönder</span>
+              <span class="arrow-icon">→</span>
+            </button>
+            <div id="quoteFormStatus" style="display:none; margin-top:14px; padding:12px; border-radius:14px; background:#ffffff; border:1px solid var(--border-med); font-size:0.84rem;"></div>
+
+            <!-- WhatsApp Direct Redirect at Bottom of Quote Form -->
+            <div class="appt-whatsapp-wrap" style="margin-top:14px;">
+              <div class="appt-whatsapp-divider">
+                <span>veya doğrudan WhatsApp hattımız</span>
+              </div>
+              <a href="https://wa.me/905417656520?text=Merhaba%20Liva%20Medikal,%20kurumsal%20%C3%BCr%C3%BCn%20ve%20fiyat%20teklifi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="appt-whatsapp-btn"
+                 onclick="return openLivaWhatsApp('quote', event)"
+                 aria-label="Whatsapp İletişim">
+                <span class="wa-icon-circle">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z"/>
+                  </svg>
+                </span>
+                <span class="wa-btn-copy">
+                  <span class="wa-btn-title">Whatsapp İletişim</span>
+                </span>
+                <span class="wa-btn-arrow">↗</span>
+              </a>
+            </div>
+          </form>
+        </div>
+
+        <div class="hq-info-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <span class="modern-care-kicker">ADANA / SEYHAN MERKEZ OFİS</span>
+            <h3 class="section-heading" style="font-size:1.5rem; margin-top:4px; margin-bottom:14px;">Liva Medikal İletişim Merkezi</h3>
+            <p style="font-size:0.9rem; color:var(--text-body); margin-bottom:20px;">
+              Sümer Mah. Baraj Cd. No:81/A Bozdoğan Apartmanı - Zemin Kat, Seyhan / ADANA
+            </p>
+
+            <div style="display:grid; gap:12px; margin-bottom:20px;">
+              <div style="background:#ffffff; padding:14px 18px; border-radius:16px; border:1px solid var(--border-soft);">
+                <strong style="color:var(--text-heading); display:block; font-size:0.82rem;">Telefon &amp; Santral</strong>
+                <a href="tel:+903222279191" style="font-family:var(--font-display); font-size:1.1rem; font-weight:700; color:var(--primary-800);">(+90) 322 227 91 91</a>
+              </div>
+              <div style="background:#ffffff; padding:14px 18px; border-radius:16px; border:1px solid var(--border-soft);">
+                <strong style="color:var(--text-heading); display:block; font-size:0.82rem;">Resmi E-Posta &amp; Çalışma Saatleri</strong>
+                <a href="mailto:info@livamedical.com" style="font-weight:700; color:var(--primary-800);">info@livamedical.com</a>
+                <span style="display:block; font-size:0.8rem; color:var(--text-muted); margin-top:2px;">Pazartesi – Cuma: 09:00 – 17:30</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="border-radius:18px; overflow:hidden; border:1px solid var(--border-med); height:210px; background:#ffffff;">
+            <iframe
+              title="Liva Medikal Seyhan Adana Harita"
+              src="https://www.google.com/maps?q=S%C3%BCmer+Mah.+Baraj+Cd.+No:81/A+Seyhan+Adana&output=embed"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. 3D & OPTICAL MAGNIFIER STUDIO MODAL
+       ======================================================================== -->
+  <div class="modal-backdrop" id="productModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <span id="modalHeaderTitle" style="font-family:var(--font-display); font-size:0.95rem; font-weight:700; color:var(--primary-800);">
+          Klinik Ürün 3B &amp; Büyüteç Stüdyosu
+        </span>
+        <button type="button" class="modal-close-btn" onclick="closeProductModal()" aria-label="Kapat">✕</button>
+      </div>
+      <div class="modal-content-grid" id="modalBodyContent"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       8.5 ⌘K QUICK SEARCH & LIVE HOVER PREVIEW MODAL
+       ======================================================================== -->
+  <div class="godly-dialog-backdrop" id="godlySearchBackdrop" role="dialog" aria-modal="true">
+    <div class="godly-search-modal">
+      <div class="godly-search-topbar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="search" id="godlySpotlightInput" placeholder="Ürün, marka veya ölçü ara (Natura, Aquacel, 330mm, Gelfix)..." autocomplete="off" />
+        <button type="button" class="godly-kbd" onclick="closeGodlySpotlight()" style="cursor:pointer;">Kapat (Esc)</button>
+      </div>
+
+      <div class="godly-search-body">
+        <aside class="godly-search-sidebar">
+          <button type="button" class="godly-section-tab active" onclick="switchGodlyTab('all', this)">🔥 Tüm Ürünler (21)</button>
+          <button type="button" class="godly-section-tab" onclick="switchGodlyTab('ostomi', this)">🛡️ Ostomi Sistemleri</button>
+          <button type="button" class="godly-section-tab" onclick="switchGodlyTab('yara', this)">🩹 Yara Örtüleri</button>
+          <button type="button" class="godly-section-tab" onclick="switchGodlyTab('cerrahi', this)">✂️ Cerrahi Aletler</button>
+          <button type="button" class="godly-section-tab" onclick="switchGodlyTab('port', this)">💉 Port İğnesi</button>
+          <button type="button" class="godly-section-tab" onclick="switchGodlyTab('partners', this)">🏢 Partnerlerimiz</button>
+        </aside>
+
+        <main class="godly-search-main" id="godlySpotlightResults"></main>
+
+        <div class="godly-hover-preview" id="godlyHoverPreview">
+          <div class="godly-hover-preview-imgbox">
+            <img id="godlyPreviewImg" src="assets/images/transparent/natura-invisiclose-hd.png" alt="Önizleme" />
+          </div>
+          <div id="godlyPreviewBrand" style="font-size:0.7rem; opacity:0.8; font-weight:600;"></div>
+          <div id="godlyPreviewTitle" style="font-family:var(--font-display); font-size:0.88rem; font-weight:700; margin-top:2px;"></div>
+          <div id="godlyPreviewDesc" style="font-size:0.74rem; opacity:0.85; margin-top:4px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       9. CLEAN MINIMAL FOOTER (EXACT SCREENSHOT 1 CLEARGRIN FOOTER)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-clean-row">
+      <a href="#top" class="brand-logo">
+        <div class="brand-mark-2k" style="width:46px; height:46px;">
+          <img class="logo-img-sage" src="assets/images/transparent/liva-signature-logo-2k.png" alt="Liva Medical 2K Amblem Logo" />
+          <img class="logo-img-cobalt" src="assets/images/transparent/liva-signature-logo-cobalt-2k.png" alt="Liva Medical 2K Cobalt Amblem Logo" />
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-name" style="font-size:1.35rem;">Liva <span class="brand-name-light">Medical</span></span>
+          <span class="brand-sub">CLINICAL CARE &amp; TECH</span>
+        </div>
+      </a>
+
+      <nav class="footer-clean-nav">
+        <a href="#top">Ana Sayfa</a>
+        <a href="#hizmetlerimiz">Hizmetlerimiz</a>
+        <a href="#yaklasimimiz">Hakkımızda</a>
+        <a href="#katalog">Ürün Kataloğu</a>
+        <a href="#partnerler">Partnerler</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+
+      <div class="footer-tagline-right">
+        DAHA SAĞLIKLI BİR YARIN<br />
+        <span style="color:var(--accent-500);">GÜVENLİ BAKIMLA BAŞLAR</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
